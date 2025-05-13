@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Brian Verdugo's Portfolio</h1>
+        <h1>Brian's Portfolio</h1>
         <nav>
             <a class="nav-link" href="./index.html">Home</a>
             <a class="nav-link" href="./projects.html">Projects</a>
@@ -20,8 +21,8 @@
     <p>This is a place where you can check out some of the stuff I've made and learn a little about me.</p>
 
     <main>
-        <section>
-            <img src="" alt="Projects Image">
+        <section class="left">
+            <img src="./images/projects-icon.png" alt="Projects Image">
             <article>
                 <h3>Projects</h3>
                 <p>
@@ -31,7 +32,7 @@
             </article>
         </section>
         <section>
-            <img src="" alt="About Me Image">
+            <img src="./images/about-me-icon.png" alt="About Me Image">
             <article>
                 <h3>About Me</h3>
                 <p>
@@ -40,6 +41,10 @@
                 <a class="button-link" href="./aboutme.html">GO</a>
             </article>
         </section>
+
+        <div class="red" id="box"> This is a box</div>
+        <button onclick="randomize()">Randomize Box Color</button>
+        <script src="./scripts/home.js"></script>
     </main>
 </body>
 </html>

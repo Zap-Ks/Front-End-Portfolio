@@ -1,0 +1,113 @@
+@import "partials/layout.scss";
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    section {
+        background-color: $yellow;
+        width: 75%;
+        height: 8rem;
+        margin: 1rem 0;
+        border-radius: 4rem 0 0 4rem;
+        display: flex;
+        align-self: flex-end;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        img {
+            height: 50%;
+        }
+        article {
+            color: black;
+            width: 50%;
+            text-align: center;
+            h3 {
+                font-size: 1rem;
+                margin: 0;
+            }
+            p {
+                font-size: 0.75rem;
+            }
+            a {
+
+            }
+        }
+    }
+    .left {
+        border-radius: 0 4rem 4rem 0;
+        align-self: flex-start;
+    }
+}
+
+// Box Color Randomization
+#box {
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    align-self: center;
+}
+button {
+    width: 100px;
+    margin-top: 2rem;
+    align-self: center;
+}
+.red {background-color: red;}
+.orange {background-color: orange;}
+.yellow {background-color: yellow;}
+.green {background-color: green;}
+.blue {background-color: blue;}
+.purple {background-color: purple;}
+.pink {background-color: hotpink;}
+.silver {
+    background-color: silver;
+    animation-name: silverAnim;
+    animation-duration: 0.75s;
+}
+.gold {
+    background-color: goldenrod;
+    animation-name: goldAnim;
+    animation-duration: 1.75s;
+}
+@keyframes silverAnim {
+    75% {
+        transform: translate(50px) rotate(30deg);
+        background-color: lightgray;
+        color: aliceblue;
+    }
+    100% {
+        transform: rotate(0deg);
+        background-color: silver;
+        color: black;
+    }
+}
+@keyframes goldAnim {
+    25% {
+        background-color: gold;
+        color: white;
+    }
+    50% {
+        background-color: goldenrod;
+        color: black;
+    }
+    75% {
+        transform: translate(100px) rotate(405deg);
+        background-color: gold;
+        color: white;
+    }
+    100% {
+        transform: translate(0px) rotate(360deg);
+        background-color: goldenrod;
+        color: black;
+    }
+}
