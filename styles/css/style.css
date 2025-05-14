@@ -1,4 +1,5 @@
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #444;
@@ -8,6 +9,7 @@ html, body {
 
 header {
   background-color: #04F;
+  height: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +26,7 @@ header h1 {
 header nav {
   background-color: #CCC;
   width: 100%;
-  height: 2rem;
+  height: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -43,23 +45,35 @@ header nav a:hover {
   text-decoration: underline overline;
 }
 
-h2 {
-  font-size: 2rem;
-  text-align: center;
+@media screen and (min-width: 480px) {
+  header {
+    flex-direction: row;
+  }
+  header nav {
+    width: 65%;
+    height: 100%;
+    border-radius: 0 0 1rem 1rem;
+  }
 }
-
-p {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main section {
+main heading h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+main heading p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+main content {
+  display: flex;
+  flex-direction: column;
+}
+main content section {
   background-color: #FD0;
   width: 75%;
   height: 8rem;
@@ -71,22 +85,22 @@ main section {
   justify-content: space-evenly;
   align-items: center;
 }
-main section img {
+main content section img {
   height: 50%;
 }
-main section article {
+main content section article {
   color: black;
   width: 50%;
   text-align: center;
 }
-main section article h3 {
+main content section article h3 {
   font-size: 1rem;
   margin: 0;
 }
-main section article p {
+main content section article p {
   font-size: 0.75rem;
 }
-main .left {
+main content .left {
   border-radius: 0 4rem 4rem 0;
   align-self: flex-start;
 }
@@ -95,13 +109,14 @@ main .left {
   width: 100px;
   height: 100px;
   margin-top: 1rem;
-  align-self: center;
+  justify-self: center;
 }
 
 button {
   width: 100px;
   margin-top: 2rem;
-  align-self: center;
+  display: flex;
+  justify-self: center;
 }
 
 .red {
@@ -174,5 +189,35 @@ button {
     transform: translate(0px) rotate(360deg);
     background-color: goldenrod;
     color: black;
+  }
+}
+@media screen and (min-width: 1025px) {
+  main {
+    flex-direction: row;
+  }
+  main heading {
+    width: 50%;
+  }
+  main heading h2 {
+    font-size: 3rem;
+  }
+  main heading p {
+    font-size: 2.5rem;
+  }
+  main content {
+    width: 50%;
+  }
+  main content section {
+    width: 90%;
+  }
+  main content section article h3 {
+    font-size: 1.25rem;
+  }
+  main content section article p {
+    font-size: 1rem;
+  }
+  main content .left {
+    border-radius: 4rem 0 0 4rem;
+    align-self: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */
