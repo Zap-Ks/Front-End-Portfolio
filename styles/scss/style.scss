@@ -45,6 +45,16 @@ main {
                 p {
                     font-size: 0.75rem;
                 }
+                .button-link {
+                    font-size: 1rem;
+                    background-color: blue;
+                    color: white;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border: 2px solid black;
+                    border-radius: 1.5rem;
+                    padding: 0.25rem;
+                }
             }
         }
         .left {
@@ -54,88 +64,48 @@ main {
     }
 }
 
-// Box Color Randomization
-#box {
-    width: 100px;
-    height: 100px;
-    margin-top: 1rem;
-    justify-self: center;
-}
-button {
-    width: 100px;
-    margin-top: 2rem;
-    display: flex;
-    justify-self: center;
-}
-.red {background-color: red;}
-.orange {background-color: orange;}
-.yellow {background-color: yellow;}
-.green {background-color: green;}
-.blue {background-color: blue;}
-.purple {background-color: purple;}
-.pink {background-color: hotpink;}
-.silver {
-    background-color: silver;
-    animation-name: silverAnim;
-    animation-duration: 0.75s;
-}
-.gold {
-    background-color: goldenrod;
-    animation-name: goldAnim;
-    animation-duration: 1.75s;
-}
-@keyframes silverAnim {
-    75% {
-        transform: translate(50px) rotate(30deg);
-        background-color: lightgray;
-        color: aliceblue;
-    }
-    100% {
-        transform: rotate(0deg);
-        background-color: silver;
-        color: black;
-    }
-}
-@keyframes goldAnim {
-    25% {
-        background-color: gold;
-        color: white;
-    }
-    50% {
-        background-color: goldenrod;
-        color: black;
-    }
-    75% {
-        transform: translate(100px) rotate(405deg);
-        background-color: gold;
-        color: white;
-    }
-    100% {
-        transform: translate(0px) rotate(360deg);
-        background-color: goldenrod;
-        color: black;
+@media screen and (min-width: 480px) {
+    main {
+        heading {
+            h2 {font-size: 3rem;}
+            p {font-size: 2.5rem;}
+        }
+        content {
+            section {
+                height: 10rem;
+                border-radius: 5rem 0 0 5rem;
+                article {
+                    h3 {font-size: 1.25rem;}
+                    p {font-size: 1rem;}
+                    .button-link {
+                        border-radius: 2rem;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+            .left {
+                border-radius: 0 5rem 5rem 0;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1025px) {
     main {
         flex-direction: row;
-        heading {
-            width: 50%;
-            h2 {font-size: 3rem;}
-            p {font-size: 2.5rem;}
-        }
+        heading {width: 50%;}
         content {
             width: 50%;
             section {
                 width: 90%;
+                margin: 3rem 0;
                 article {
                     h3 {font-size: 1.25rem;}
                     p {font-size: 1rem;}
                 }
             }
             .left {
-                border-radius: 4rem 0 0 4rem;
+                border-radius: 5rem 0 0 5rem;
                 align-self: flex-end;
             }
         }

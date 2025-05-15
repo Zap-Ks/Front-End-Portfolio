@@ -1,0 +1,86 @@
+#box {
+  width: 100px;
+  height: 100px;
+  margin-top: 1rem;
+  justify-self: center;
+}
+
+button {
+  width: 100px;
+  margin-top: 2rem;
+  display: flex;
+  justify-self: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: hotpink;
+}
+
+.silver {
+  background-color: silver;
+  animation-name: silverAnim;
+  animation-duration: 0.75s;
+}
+
+.gold {
+  background-color: goldenrod;
+  animation-name: goldAnim;
+  animation-duration: 1.75s;
+}
+
+@keyframes silverAnim {
+  75% {
+    transform: translate(50px) rotate(30deg);
+    background-color: lightgray;
+    color: aliceblue;
+  }
+  100% {
+    transform: rotate(0deg);
+    background-color: silver;
+    color: black;
+  }
+}
+@keyframes goldAnim {
+  25% {
+    background-color: gold;
+    color: white;
+  }
+  50% {
+    background-color: goldenrod;
+    color: black;
+  }
+  75% {
+    transform: translate(100px) rotate(405deg);
+    background-color: gold;
+    color: white;
+  }
+  100% {
+    transform: translate(0px) rotate(360deg);
+    background-color: goldenrod;
+    color: black;
+  }
+}/*# sourceMappingURL=randomizer.css.map */

@@ -82,45 +82,31 @@ main content {
   flex-direction: column;
 }
 main content section {
-  background-color: #FD0;
-  width: 75%;
-  height: 8rem;
   margin: 1rem 0;
-  border-radius: 4rem 0 0 4rem;
   display: flex;
-  align-self: flex-end;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 main content section img {
-  height: 50%;
+  width: 35%;
 }
 main content section article {
-  color: black;
-  width: 50%;
-  text-align: center;
+  width: 60%;
 }
-main content section article h3 {
-  font-size: 1rem;
+main content section article .project-link {
+  color: white;
+  -webkit-text-stroke: 2px blue;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
   margin: 0;
+}
+main content section article .project-link:hover {
+  color: black;
 }
 main content section article p {
   font-size: 0.75rem;
-}
-main content section article .button-link {
-  font-size: 1rem;
-  background-color: blue;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 1.5rem;
-  padding: 0.25rem;
-}
-main content .left {
-  border-radius: 0 4rem 4rem 0;
-  align-self: flex-start;
 }
 
 @media screen and (min-width: 480px) {
@@ -130,22 +116,11 @@ main content .left {
   main heading p {
     font-size: 2.5rem;
   }
-  main content section {
-    height: 10rem;
-    border-radius: 5rem 0 0 5rem;
-  }
-  main content section article h3 {
-    font-size: 1.25rem;
+  main content section article .project-link {
+    font-size: 2.5rem;
   }
   main content section article p {
-    font-size: 1rem;
-  }
-  main content section article .button-link {
-    border-radius: 2rem;
-    padding: 0.5rem;
-  }
-  main content .left {
-    border-radius: 0 5rem 5rem 0;
+    font-size: 1.75rem;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -158,18 +133,10 @@ main content .left {
   main content {
     width: 50%;
   }
-  main content section {
-    width: 90%;
-    margin: 3rem 0;
-  }
-  main content section article h3 {
-    font-size: 1.25rem;
+  main content section article .project-link {
+    font-size: 2rem;
   }
   main content section article p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
-  main content .left {
-    border-radius: 5rem 0 0 5rem;
-    align-self: flex-end;
-  }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=projects.css.map */

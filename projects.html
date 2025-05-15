@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | My Portfolio</title>
+    <link rel="stylesheet" href="./styles/css/projects.css">
+    <link rel="stylesheet" href="./styles/css/randomizer.css">
 </head>
 <body>
     <header>
@@ -16,39 +18,46 @@
         </nav>
     </header>
 
-    <h2>Projects</h2>
-    <p>(Some projects may not have mobile support)</p>
-
     <main>
-        <section>
-            <img src="" alt="Covetous Circle Image">
-            <article>
-                <a class="project-link" href="">Covetous Circle</a>
-                <p>
-                    This is a game I created with jQuery. It was for a project at school, but I was having fun making it, so I kept updating it a little after I already turned it in.
-                </p>
-            </article>
-        </section>
+        <heading>
+            <h2>Projects</h2>
+            <p>(Some projects may not have mobile support)</p>
 
-        <section>
-            <img src="" alt="Project Image">
-            <article>
-                <a class="project-link" href="">[Project Name]</a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque expedita eligendi ab sequi sunt dolore repellat alias nihil veritatis illo.
-                </p>
-            </article>
-        </section>
+            <div class="red" id="box"> This is a box</div>
+            <button onclick="randomize()">Randomize Box Color</button>
+        </heading>
 
-        <section>
-            <img src="" alt="Project Image">
-            <article>
-                <a class="project-link" href="">[Project Name]</a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque expedita eligendi ab sequi sunt dolore repellat alias nihil veritatis illo.
-                </p>
-            </article>
-        </section>
+        <content>
+            <section>
+                <img src="./images/Covetous_Circle_Preview.png" alt="Covetous Circle Preview">
+                <article>
+                    <a class="project-link" target="_blank" href="https://brian-09.github.io/Covetous_Circle/">Covetous Circle</a>
+                    <p>
+                        This is a game I created with jQuery. It was for a project at school, but I was having fun making it, so I kept updating it a little after I already turned it in.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <img src="./images/Color_Theory_Preview.png" alt="Color Theory Sites Preview">
+                <article>
+                    <a class="project-link" target="_blank" href="https://brian-09.github.io/Color-Theory-Sites/">Color Theory Sites</a>
+                    <p>
+                        This is a small collection of 3 homepages for madeup websites that I created for a class assignment. It was to show our understanding of color theory and how it's used when making sites.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <img src="./images/Picture_Grid_Preview.png" alt="Picture Grid Site Preview">
+                <article>
+                    <a class="project-link" target="_blank" href="https://brian-09.github.io/Picture-Grid-Site/">Picture Grid Site</a>
+                    <p>
+                        This is a site I created for another class assignment. It was practice for creating grids on websites.
+                    </p>
+                </article>
+            </section>
+        </content>
     </main>
+
+    <script src="./scripts/projects.js"></script>
 </body>
 </html>
