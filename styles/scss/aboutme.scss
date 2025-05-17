@@ -1,0 +1,46 @@
+@import "partials/layout.scss";
+
+// Main Content Styles
+
+main {
+    heading {
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .profile-border {
+            width: 8rem;
+            height: 8rem;
+            background-image: linear-gradient(cyan, blue);
+            border-radius: 4rem;
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 75%;
+            }
+        }
+    }
+    content {
+        p {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    main {
+        heading {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        content {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

@@ -69,80 +69,33 @@ header nav a:hover {
     font-size: 2rem;
   }
 }
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 main heading h2 {
   font-size: 2rem;
   text-align: center;
 }
-main heading p {
-  font-size: 1.5rem;
-  text-align: center;
-}
-main content {
+main heading .profile-border {
+  width: 8rem;
+  height: 8rem;
+  background-image: linear-gradient(cyan, blue);
+  border-radius: 4rem;
   display: flex;
-  flex-direction: column;
-}
-main content section {
-  margin: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-self: center;
+  justify-content: center;
   align-items: center;
 }
-main content section img {
-  width: 35%;
+main heading .profile-border img {
+  width: 75%;
 }
-main content section article {
-  width: 60%;
-}
-main content section article .project-link {
-  color: white;
-  -webkit-text-stroke: 2px blue;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-}
-main content section article .project-link:hover {
-  color: black;
-}
-main content section article p {
-  font-size: 0.75rem;
+main content p {
+  font-size: 1rem;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 480px) {
   main heading h2 {
     font-size: 3rem;
   }
-  main heading p {
-    font-size: 2.5rem;
+  main content p {
+    font-size: 1.5rem;
   }
-  main content section article .project-link {
-    font-size: 2.5rem;
-  }
-  main content section article p {
-    font-size: 1.75rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  main {
-    flex-direction: row;
-  }
-  main heading {
-    width: 50%;
-  }
-  main content {
-    width: 50%;
-  }
-  main content section article .project-link {
-    font-size: 2rem;
-  }
-  main content section article p {
-    font-size: 1.25rem;
-  }
-}/*# sourceMappingURL=projects.css.map */
+}/*# sourceMappingURL=aboutme.css.map */

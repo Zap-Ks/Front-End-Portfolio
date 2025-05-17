@@ -1,13 +1,21 @@
+#box-container {
+  background-color: white;
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+  width: 50%;
+  justify-self: center;
+}
+
 #box {
   width: 100px;
   height: 100px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   justify-self: center;
 }
 
 button {
   width: 100px;
-  margin-top: 2rem;
+  margin: 1.5rem 0;
   display: flex;
   justify-self: center;
 }
@@ -54,7 +62,7 @@ button {
 
 @keyframes silverAnim {
   75% {
-    transform: translate(50px) rotate(30deg);
+    transform: rotate(30deg);
     background-color: lightgray;
     color: aliceblue;
   }
@@ -74,12 +82,12 @@ button {
     color: black;
   }
   75% {
-    transform: translate(100px) rotate(405deg);
+    transform: rotate(405deg);
     background-color: gold;
     color: white;
   }
   100% {
-    transform: translate(0px) rotate(360deg);
+    transform: rotate(360deg);
     background-color: goldenrod;
     color: black;
   }

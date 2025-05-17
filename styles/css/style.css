@@ -49,13 +49,19 @@ header nav a:hover {
   header {
     flex-direction: row;
   }
+  header h1 {
+    font-size: 2rem;
+  }
   header nav {
     width: 65%;
     height: 100%;
     border-radius: 0 0 1rem 1rem;
   }
+  header nav a {
+    font-size: 1.5rem;
+  }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1025px) {
   header h1 {
     font-size: 3rem;
   }
