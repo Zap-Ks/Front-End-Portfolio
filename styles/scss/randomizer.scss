@@ -1,8 +1,9 @@
 // Box Color Randomization
 #box-container {
     background-color: white;
-    border: 0.5rem solid black;
+    border: 0.5rem solid #04F;
     border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem black;
     width: 50%;
     justify-self: center;
 }
