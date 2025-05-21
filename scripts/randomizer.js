@@ -20,3 +20,20 @@ function randomize() {
         document.getElementById("box").setAttribute("class", "gold");
     }
 }
+
+let container = $("#box-container")
+let toggleButton = $("#toggle-button")
+container.slideUp(0)
+let isOpen = false
+
+function openClose() {
+    if (isOpen) {
+        isOpen = false
+        container.slideUp(1000)
+        toggleButton.html("Open Randomizer")
+    } else {
+        isOpen = true
+        container.slideDown(1000)
+        toggleButton.html("Close Randomizer")
+    }
+}
