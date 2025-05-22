@@ -90,6 +90,7 @@ main heading .profile-border {
 }
 main heading .profile-border img {
   width: 75%;
+  border-radius: 100%;
 }
 main content p {
   font-size: 1.5rem;

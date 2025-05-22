@@ -1,10 +1,12 @@
 $(document).ready(function(){
+    //Variable
     let navLink = $(".nav-link")
 
+    //Nav link hover animation
     navLink.mouseover(function(){
-        navLink.animate({top: "100px"}, 1000)
+        $(this).animate({fontSize:"+=8px"}, 500)
     })
     navLink.mouseout(function(){
-        // code
+        $(this).animate({fontSize:"-=8px"}, 500)
     })
 });
